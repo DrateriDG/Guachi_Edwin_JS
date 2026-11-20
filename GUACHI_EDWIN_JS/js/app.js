@@ -136,3 +136,43 @@ const mostrarResumenFinal = () => {
     alert(texto);
     console.log(texto);
 };
+
+/* 
+* PROGRAMA PRINCIPAL
+*/
+// ==============================
+// RF02. Menú principal
+// ==============================
+const iniciarSistema = () => {
+    let opcion;
+
+    do {
+        opcion = pedirTexto(
+            "SISTEMA INNOVA ESPE 2026\n\n" +
+            "1. Comprar entradas\n" +
+            "2. Consultar cupos disponibles\n" +
+            "3. Consultar ingresos acumulados\n" +
+            "4. Salir\n\n" +
+            "Seleccione una opción:"
+        );
+
+        switch (opcion) {
+            case "1":
+                comprarEntradas();
+                break;
+            case "2":
+                consultarCupos();
+                break;
+            case "3":
+                consultarIngresos();
+                break;
+            case "4":
+                mostrarResumenFinal();
+                break;
+            default:
+                alert("Opción no válida. Intente nuevamente.");
+        }
+    } while (opcion !== "4");
+};
+
+iniciarSistema();
