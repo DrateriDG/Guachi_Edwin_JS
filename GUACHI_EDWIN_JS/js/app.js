@@ -107,3 +107,16 @@ const consultarCupos = () => {
     alert(texto);
     console.log(texto);
 };
+
+/**
+* CONSULTA DE INGRESOS 
+*/
+const consultarIngresos = () => {
+    const texto =
+        "Total de entradas vendidas: " + entradasVendidas + "\n" +
+        "Total de ingresos acumulados: $" + ingresos.toFixed(2) + "\n" +
+        "Número de compras realizadas: " + compras;
+
+    alert(texto);
+    console.log(texto);
+};
