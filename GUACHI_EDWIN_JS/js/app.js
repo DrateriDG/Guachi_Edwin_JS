@@ -120,3 +120,19 @@ const consultarIngresos = () => {
     alert(texto);
     console.log(texto);
 };
+
+/*
+* RESUMEN FINAL
+*/
+const mostrarResumenFinal = () => {
+    const texto =
+        "RESUMEN FINAL - INNOVA ESPE 2026\n" +
+        "Entradas vendidas: " + entradasVendidas + "\n" +
+        "Ingresos acumulados: $" + ingresos.toFixed(2) + "\n" +
+        "Compras realizadas: " + compras + "\n" +
+        "Cupos restantes: " + cupos + "\n\n" +
+        "Gracias por usar el sistema.";
+
+    alert(texto);
+    console.log(texto);
+};
