@@ -88,3 +88,22 @@ const comprarEntradas = () => {
     alert(resumen);
     console.log(resumen);
 };
+
+/*
+* CONSULTA DE CUPOS 
+*/
+const consultarCupos = () => {
+    let mensaje;
+
+    if (cupos > 10) {
+        mensaje = "Cupos disponibles";
+    } else if (cupos >= 1) {
+        mensaje = "Últimos cupos disponibles";
+    } else {
+        mensaje = "Evento agotado";
+    }
+
+    const texto = "Cupos disponibles: " + cupos + "\n" + mensaje;
+    alert(texto);
+    console.log(texto);
+};
