@@ -1,0 +1,1 @@
+# Sistema de gestión de entradas para un evento tecnológico
